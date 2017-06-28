@@ -2,53 +2,90 @@
 <html>
 <head>
 	<title>Portfolio</title>
-	
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-    
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
 	<script type="text/javascript" src="./assets/js/jscript.js"></script>
 </head>
 <body>
-	
+
+<div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
-				<li><a href=""><h5>about me</h5></a></li>
-				<li><a href=""><h5>projects</h5></a></li>
-				<li><a href=""><h5>contact</h5></a></li>
+				<li><a href="#about"><h5>about me</h5></a></li>
+				<li><a href="#projects"><h5>projects</h5></a></li>
+				<li><a href="#contact"><h5>contact</h5></a></li>
 			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="#about"><h5 class="white-text">about me</h5></a></li>
+				<li><a href="#projects"><h5 class="white-text">projects</h5></a></li>
+				<li><a href="#contact"><h5 class="white-text">contact</h5></a></li>
+      </ul>
 		</div>
 	</nav>
+</div>
 
 	<div class="contaner">
 		<!-- About me section -->
-		<div class="parallax-container">
-			<div class="parallax">
-				<img src="./assets/img/firstimg.jpg">
-			</div>
+		<div id="about" class="section">
 			<div class="row">
-				<div clss="col s12 m6">
-					<div class="card">
-						<div class="card-image">
-							<img src="http://via.placeholder.com/350x150">
-						</div>
+				<div clss="col m6">
+					<div class="card small center-align">
 						<div class="card-content">
-              				<p>I am a very simple card. I am good at containing small bits of information.
-              				I am convenient because I require little markup to use effectively.</p>
-            			</div>
+							<div class="card-title white-text text-lighten-4">
+									<h3>Zameerul Haque</h3>
+							</div>
+							<div class="divider"></div>
+							<div class="white-text"><h4>Computer Science Undergrad</h4>
+							<h4>Web Developer</h4>
+						</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+ 		<!-- About ends -->
+		<!-- Projects -->
+		<div id="projects" class="section">
+				<h4 class="flow-text center-align">Projects</h4>
+				<div class="row">
+						<div class="col s12 m4">
+							<div class="card small">
+								<p>Project 1</p>
+							</div>
+						</div>
+						<div class="col s12 m4">
+							<div class="card small">
+								<p>Project 2</p>
+							</div>
+						</div>
+						<div class="col s12 m4">
+							<div class="card small">
+								<p>Project 3</p>
+							</div>
+						</div>
+				</div>
+		</div>
+		<!-- Projects -->
+		<!-- Contact -->
+		<div id="contact" class="section">
+				<h4 class="flow-text center-align">Say hello to me</h4>
+
+		</div>
+</div>
+
 </body>
 </html>
